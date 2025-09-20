@@ -74,28 +74,4 @@ echo "Archivos HTML: $(find . -name '*.html' | wc -l)"
 git branch -a
 ```
 
-## Cómo usar estos scripts
 
-1. Clonar el repositorio:
-   ```bash
-   git clone https://gitlab.com/public-universidad/pi-app-web-lavanderia-bs.git
-   cd pi-app-web-lavanderia-bs
-   ```
-
-2. Ejecutar scripts de análisis:
-   ```bash
-   chmod +x audit-repo.sh
-   ./audit-repo.sh > auditoria-resultado.txt
-   ```
-
-3. Analizar commits específicos:
-   ```bash
-   git show --stat [hash-del-commit]
-   ```
-
-## Notas importantes
-
-- Los scripts están diseñados para funcionar en sistemas Unix/Linux
-- Algunos autores tienen nombres con caracteres especiales que requieren escaping
-- Los resultados pueden variar según la configuración local de git
-- Se recomienda usar `timeout` para comandos que puedan colgarse en repositorios grandes
